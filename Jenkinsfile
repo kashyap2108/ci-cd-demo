@@ -9,6 +9,7 @@ pipeline {
         CI = 'true'
     }
     stages {
+        stage('C')
         stage('Build') {
             steps {
                 sh 'npm install'
@@ -16,7 +17,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'echo " master  Hello world!"'
+                sh 'echo " master2  Hello world!"'
             }
         }
     }
